@@ -1,0 +1,13 @@
+node_modules/
+.node_repl_history
+.npm
+.vscode
+.idea
+Thumbs.db
+/**/Thumbs.db
+npm-debug.log*
+dist
+package-lock.json
+/**/*.psd
+/**/.DS_Store
+.jsbeautifyrc
