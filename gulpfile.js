@@ -1,25 +1,21 @@
-let gulp = require('gulp'),
+let
+	gulp = require('gulp'),
 	scss = require('gulp-sass'),
-	smap = require('gulp-sourcemaps'),
-	prefix = require('autoprefixer'),
+	beautify = require('gulp-beautify'), //може замінити додаток beautify на Gulp пакет?
+	uglify = require('gulp-uglifyjs'),
+	cssnano = require('gulp-cssnano'),
+	imagemin = require('gulp-imagemin'),
+	cache = require('gulp-cache'),
+	autoprefixer = require('gulp-autoprefixer'),
 	lint = require('gulp-stylelint'),
 	postcss = require('gulp-postcss'),
 	sourcemaps = require('gulp-sourcemaps'),
-	browserSync = require('browser-sync');
+	prefix = require('autoprefixer'),
+	browserSync = require('browser-sync'),
+	pngquant = require('imagemin-pngquant'),
+	del = require('del');
 
-
-gulp.task('lint', () =>
-	gulp.src('app/scss/**/*.scss')
-	.pipe(lint({
-		failAfterError: true,
-		reporters: [{
-			formatter: 'verbose',
-			console: true
-		}],
-		debug: true
-	}))
-);
-
+/*scss*/
 gulp.task('scss', () =>
 	gulp
 	.src('app/scss/style.scss')
@@ -40,16 +36,35 @@ gulp.task('scss', () =>
 	}))
 );
 
+/*linter*/
+gulp.task('lint', () =>
+	gulp.src('app/scss/**/*.scss')
+	.pipe(lint({
+		failAfterError: true,
+		reporters: [{
+			formatter: 'verbose',
+			console: true
+		}],
+		debug: true
+	}))
+);
+
 gulp.task('liveserver', () =>
 	browserSync.init({
 		server: {
 			baseDir: "app"
 		},
+		notify: false
 	})
 );
-gulp.task('watch', function() {
+
+
+
+gulp.task('watch', ['liveserver'], function() {
 	gulp.watch('app/scss/**/*.scss', ['scss']);
 	gulp.watch('app/*.html').on('change', browserSync.reload);
 });
 
-gulp.task('default', ['scss', 'liveserver', 'watch']);
+
+
+gulp.task('default', ['watch']);
