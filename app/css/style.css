@@ -79,14 +79,18 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline; }
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+
 
 /* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -98,28 +102,93 @@ hgroup,
 menu,
 nav,
 section {
-  display: block; }
+	display: block;
+}
 
 body {
-  line-height: 1; }
+	line-height: 1;
+}
 
 ol,
 ul {
-  list-style: none; }
+	list-style: none;
+}
 
 blockquote,
 q {
-  quotes: none; }
+	quotes: none;
+}
 
 blockquote::before,
 blockquote::after,
 q::before,
 q::after {
-  content: '';
-  content: none; }
+	content: '';
+	content: none;
+}
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	border: 1px sold black;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat 12, 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "articles articles articles articles articles articles articles articles articles articles articles articles" "news news news news news reviews reviews reviews community community community community" "best-picks best-picks best-picks best-picks best-picks best-picks best-picks best-picks best-picks best-picks best-picks best-picks best-picks" "watch-next watch-next watch-next fav-deals fav-deals fav-deals ref-n-tut ref-n-tut ref-n-tut" "email email email email email email email email email email email email" "pictures pictures pictures pictures pictures pictures pictures pictures pictures pictures pictures pictures" "trend trend trend trend trend trend trend trend trend trend trend trend";
+}
+
+.grid-item-1 {
+	grid-area: articles;
+}
+
+.grid-item-2 {
+	grid-area: news;
+}
+
+.grid-item-3 {
+	grid-area: reviews;
+}
+
+.grid-item-4 {
+	grid-area: community;
+}
+
+.grid-item-5 {
+	grid-area: best-picks;
+}
+
+.grid-item-6 {
+	grid-area: watch-next;
+}
+
+.grid-item-7 {
+	grid-area: fav-deals;
+}
+
+.grid-item-8 {
+	grid-area: ref-n-tut;
+}
+
+.grid-item-9 {
+	grid-area: email;
+}
+
+.grid-item-10 {
+	grid-area: pictures;
+}
+
+.grid-item-11 {
+	grid-area: trend;
+}
+
+
 
 /*# sourceMappingURL=style.css.map */
