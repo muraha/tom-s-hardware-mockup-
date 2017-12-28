@@ -1,56 +1,23 @@
-* {
-	border: 1px sold black;
+$red: #D8383B;
+$red-logo: #be3806;
+
+
+
+
+
+
+
+/**/
+
+*,
+section {
+	border: 1px solid;
 	box-sizing: border-box;
 }
 
-.main-grid-container {
-	display: grid;
-	grid-template-rows: auto;
-	grid-template-columns: repeat (12, 1fr);
-	grid-template-areas: "articles articles articles articles articles articles articles articles articles articles articles articles" "news news news news news reviews reviews reviews community community community community" "best-picks best-picks best-picks best-picks best-picks best-picks best-picks best-picks best-picks best-picks best-picks best-picks best-picks" "watch-next watch-next watch-next fav-deals fav-deals fav-deals ref-n-tut ref-n-tut ref-n-tut" "email email email email email email email email email email email email" "pictures pictures pictures pictures pictures pictures pictures pictures pictures pictures pictures pictures" "trend trend trend trend trend trend trend trend trend trend trend trend"
-}
-
-
-.grid-item-1 {
-	grid-area: articles;
-}
-
-.grid-item-2 {
-	grid-area: news;
-}
-
-.grid-item-3 {
-	grid-area: reviews;
-}
-
-.grid-item-4 {
-	grid-area: community;
-}
-
-.grid-item-5 {
-	grid-area: best-picks;
-}
-
-.grid-item-6 {
-	grid-area: watch-next;
-}
-
-.grid-item-7 {
-	grid-area: fav-deals;
-}
-
-.grid-item-8 {
-	grid-area: ref-n-tut;
-}
-
-.grid-item-9 {
-	grid-area: email;
-}
-
-.grid-item-10 {
-	grid-area: pictures;
-}
-
-.grid-item-11 {
-	grid-area: trend;
+body {
+	color: #263341;
+	background-color: #efefef;
+	font-family: Lato, "Open Sans", "Source Sans Pro";
+	font-size: 14px;
 }
