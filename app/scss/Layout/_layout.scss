@@ -7,6 +7,9 @@
 	margin: 0 auto;
 	box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.2);
 	background-color: #fff;
+	/* sticky footer */
+	display: flex;
+	flex-flow: column;
 }
 
 .header {
@@ -16,14 +19,14 @@
 	margin: 0 -20px;
 	padding: 0 20px;
 	background-color: #fff;
-	/**/
 	height: 60px;
+
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: center;
 	align-content: flex-start;
-	border-bottom: 1px solid #ddc;
+	border-bottom: 1px solid #dde;
 }
 
 .sections-container {
@@ -33,7 +36,9 @@
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-content: flex-start;
+	/* sticky footer */
+	flex: 1 0 auto;
 }
 
 .footer-container {
