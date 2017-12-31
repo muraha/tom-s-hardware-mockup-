@@ -1,0 +1,15 @@
+.articles {
+	overflow: hidden;
+}
+
+.articles-container {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.article-item {
+	height: 200px;
+	flex: 1 0 18%;
+	margin: 0 1%;
+}

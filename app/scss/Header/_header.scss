@@ -1,34 +1,101 @@
-.line {
+.heager-line {
 	border: 2px solid $red;
-	width: 1440px;
+	max-width: 1440px;
+	flex: 1 0 100%;
 	margin: 0 -20px 15px -20px;
 	align-self: flex-start;
 }
 
-.logo {
-	margin-right: 20px;
+.heager-nav-container {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 
-.svg-logo-tom {
+.header-logo {
+	margin-right: 30px;
+}
+
+.header-logo-tom {
 	width: 65px;
 	height: 27px;
 	fill: #000;
 }
 
-.svg-logo-hard {
+.header-logo-hard {
 	width: 145px;
 	height: 27px;
 	fill: $red-logo;
 }
 
-.nav {
+.heager-nav {
 	margin-right: 25px;
-	flex: 0 0 65%;
 }
 
-.nav a:not(:last-child) {
+.heager-nav a:not(:last-child) {
 	margin-right: 30px;
 }
+
+.heager-btns-container {
+	/**/
+}
+
+.nav-submenu {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

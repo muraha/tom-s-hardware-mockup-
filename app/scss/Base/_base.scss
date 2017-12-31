@@ -1,5 +1,6 @@
 $red: #D8383B;
 $red-logo: #be3806;
+$font-size: 14px;
 
 *,
 section {
@@ -11,5 +12,5 @@ body {
 	color: #263341;
 	background-color: #efefef;
 	font-family: Lato, "Open Sans", "Source Sans Pro";
-	font-size: 14px;
+	font-size: $font-size;
 }
