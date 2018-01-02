@@ -1,0 +1,30 @@
+//colors
+$red-logo: #be3806;
+$red: #D8383B;
+$dark-gray: #263341;
+$middle-gray: #3D5268;
+$light-gray: #8C9EB1;
+
+//fonts
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$font-size-base: 14px;
+$font-weight-base: $font-weight-normal;
+$line-height-base: 1.15;
+
+//headings
+$h1-font-size: $font-size-base * 1.714285714285714; //24px bold
+$h2-font-size: $font-size-base * 1.714285714285714; //24px regular
+$h3-font-size: $font-size-base * 1.357142857142857; //19 regular
+$h4-font-size: $font-size-base * 1.214285714285714; //17 regular
+$h5-font-size: $font-size-base * 1.071428571428571; //15 bold
+$h6-font-size: $font-size-base;
+
+$h1-font-weight: 700;
+$h2-font-weight: 400;
+$h3-font-weight: 400;
+$h4-font-weight: 400;
+$h5-font-weight: 700;
+$h6-font-weight: $font-weight-base;

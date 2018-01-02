@@ -1,8 +1,9 @@
 .heager-line {
-	border: 2px solid $red;
+	background-color: $red;
+	height: 4px;
 	max-width: 1440px;
 	flex: 1 0 100%;
-	margin: 0 -20px 15px -20px;
+	margin: 0 -20px 18px -20px;
 	align-self: flex-start;
 }
 
@@ -13,17 +14,17 @@
 }
 
 .header-logo {
-	margin-right: 30px;
+	margin-right: 25px;
 }
 
 .header-logo-tom {
-	width: 65px;
+	width: 67px;
 	height: 27px;
 	fill: #000;
 }
 
 .header-logo-hard {
-	width: 145px;
+	width: 153px;
 	height: 27px;
 	fill: $red-logo;
 }
@@ -32,17 +33,39 @@
 	margin-right: 25px;
 }
 
-.heager-nav a:not(:last-child) {
-	margin-right: 30px;
-}
-
-.heager-btns-container {
-	/**/
+.heager-nav a:visited {
+	color: $dark-gray;
 }
 
 .nav-submenu {
 	display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
