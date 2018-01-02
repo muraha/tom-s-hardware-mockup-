@@ -198,10 +198,8 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   cursor: pointer; }
-  a:hover, a:focus, a:active {
+  a:hover, a:active {
     color: #D8383B; }
-  a:visited {
-    color: #8C9EB1; }
   a img {
     border: 0; }
 
@@ -354,9 +352,6 @@ a {
 
 .heager-nav {
   margin-right: 25px; }
-
-.heager-nav a:visited {
-  color: #263341; }
 
 .nav-submenu {
   display: none; }
