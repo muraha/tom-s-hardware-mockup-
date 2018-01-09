@@ -1,6 +1,8 @@
-*,
-section {
+section:nth-child(n+2) {
 	border: 1px solid;
+}
+
+* {
 	box-sizing: border-box;
 }
 

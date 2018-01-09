@@ -5,6 +5,7 @@ $dark-gray: #263341;
 $middle-gray: #3D5268;
 $light-gray: #8C9EB1;
 
+
 //fonts
 $font-weight-light: 300;
 $font-weight-normal: 400;
@@ -28,3 +29,8 @@ $h3-font-weight: 400;
 $h4-font-weight: 400;
 $h5-font-weight: 700;
 $h6-font-weight: $font-weight-base;
+
+//shadow
+$box-shadow: 0 15px 35px rgba(61, 82, 104, 0.12),
+0 5px 15px rgba(22, 30, 39, 0.08)
+/**/
