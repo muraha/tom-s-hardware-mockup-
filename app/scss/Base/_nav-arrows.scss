@@ -1,0 +1,24 @@
+.tab-nav {
+	text-align: right;
+}
+
+.tab-prev-next {
+	background-color: #F5F8FB;
+	color: $red;
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	text-align: center;
+	font-size: .8em;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.fa-angle-left,
+.fa-angle-right {
+	margin-top: 6px;
+}
+
+.tab-number {
+	margin: 0 10px;
+}

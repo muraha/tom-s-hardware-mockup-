@@ -1,0 +1,7 @@
+.news-list li:nth-child(n) {
+	padding: 14px 0;
+	border-bottom: 1px solid $lighter-gray;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
