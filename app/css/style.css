@@ -159,7 +159,7 @@ h6,
 h1,
 .h1 {
   font-size: 24px;
-  font-weight: 700; }
+  font-weight: 800; }
 
 h2,
 .h2 {
@@ -169,7 +169,7 @@ h2,
 h3,
 .h3 {
   font-size: 19px;
-  font-weight: 400; }
+  font-weight: 600; }
 
 h4,
 .h4 {
@@ -190,7 +190,7 @@ h6,
   padding-left: 16px;
   padding-right: 16px; }
 
-.margin-b-1 {
+.margin-b-16 {
   margin-bottom: 16px; }
 
 a {
@@ -359,6 +359,12 @@ a {
   display: none; }
 
 /*button's styles will be here*/
+.warning {
+  padding-top: 75px;
+  font-size: 11.2px;
+  font-style: italic;
+  margin: 0 auto; }
+
 .page-block {
   padding: 10px 0;
   padding-bottom: 35px;
@@ -419,11 +425,20 @@ a {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%; }
 
-.warning {
-  padding-top: 75px;
-  font-size: 11.2px;
-  font-style: italic;
-  margin: 0 auto; }
+.section-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.fa-arrow-right {
+  font: normal normal normal 14px FontAwesome; }
 
 .articles {
   overflow: hidden; }
@@ -451,7 +466,6 @@ a {
   overflow: hidden; }
 
 .article-item-img {
-  background-image: url(../img/1111.webp);
   background-size: cover;
   height: 150px; }
 
